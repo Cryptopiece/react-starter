@@ -625,3 +625,6 @@ aside .iAmBabu {
 		padding: 10px 15px;
 	}
 }
+.align-items-center{
+	justify-content: space-between;
+}
