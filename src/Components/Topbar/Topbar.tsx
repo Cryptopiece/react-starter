@@ -6,7 +6,7 @@ import  './topbar.module.css';
 import Web3Modal from "web3modal";
 import logo from "./img/logo.png";
 import iconLogout from "./img/icon-logout.svg";
-import iconAppDownload from "./img/icon-app-Download.svg";
+import iconAppDownload from "./img/icon-app-download.svg";
 import iconDollar from "./img/icon-dollar.svg";
 import iconFlagUs from "./img/icon-flag-us.svg";
 
