@@ -4,7 +4,6 @@ import React, {useState, useEffect} from "react";
 import styled from "styled-components";
 import  { Image,Box }  from "../Images/Image";
 import { ethers } from "ethers";
-import Web3Modal from 'web3modal'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Wrapper = styled.div`
 width: 100%;
@@ -30,8 +29,21 @@ gap: 3px;
 
 
 
-function BoxGame() {
+ function BoxGame() {
    
+    async function buyBox()
+    {
+        const provider =  new ethers.providers.Web3Provider(window.ethereum);
+        let signer = await provider.getSigner(); 
+        let contract = new ethers.Contract(import.meta.env.VITE_BABBU_NFT, import.meta.env.VITE_BABBU_NFT_ABI, signer);        
+        contract.buyBlindBox(1).then(console.log);
+    }
+    return (
+    <button onClick={buyBox} className="btn bg-yellow ">
+        Buy Box
+    </button>
+    )
+
 }
 
 export default BoxGame;
