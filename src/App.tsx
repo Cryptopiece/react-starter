@@ -6,7 +6,7 @@ import {
 
 import NFTBox from "./pages/NFTBox/NFTBox";
 import React from "react";
-import "./app.css"
+import "./App.css"
 import BoxGame from './Components/BoxGames/BoxGame';
 
 function App() {
